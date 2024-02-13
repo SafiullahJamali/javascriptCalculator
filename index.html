@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>indexhtml</title>
+    <link rel="stylesheet" href="style.css">
+   
+</head>
+<body>
+    <div class="Contain">
+        <div class="calculator">
+            <form>
+                <div class="display">
+                     <input type="text" class="display" id="calculator-display" readonly> 
+                </div>
+                <div>
+                     <input type="button" value="AC" onclick="cleardisplay()" id="opt">
+                     <input type="button" value="DEL" onclick="deleteLast()"id="opt">
+                     <input type="button" value="."onclick="appendInput('.')"id="opt">
+                     <input type="button" value="/"onclick="appendInput('/')" id="opt">
+                </div>
+                <div>
+                    
+                    <input type="button" value="9"onclick="appendInput('9')">
+                    <input type="button" value="8" onclick="display.value +='8'">
+                    <input type="button" value="7" onclick="display.value +='7'">
+                    <input type="button" value="*" onclick="appendInput('*')"id="opt">
+
+                </div>
+                <div>
+                    <input type="button" value="6" onclick="display.value += '6' ">
+                    <input type="button" value="5"onclick="display.value += '5' ">
+                    <input type="button" value="4"onclick="display.value += '4' ">
+                    <input type="button" value="-" onclick="appendInput('-')"id="opt">
+
+                </div>
+                <div>
+                    <input type="button" value="3"onclick="display.value += '3'">
+                    <input type="button" value="2"onclick = "appendInput('2')">
+                    <input type="button" value="1"onclick= "appendInput('1')">
+                    <input type="button" value="+" onclick = "appendInput('+')"id="opt">
+                </div>
+                <div>
+                    <input type="button" value="00" onclick="appendInput('00')"id="opt">
+                    <input type="button" value="0" onclick="appendInput('0')"id="opt">
+                    <input type="button" value="=" style="width:120px;" onclick="calculator()"id="opt">
+                </div>
+            </form>
+        </div>
+    
+    </div>
+    <script src="items.js"></script>
+</body>
+</html>
